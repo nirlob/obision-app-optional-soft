@@ -71,7 +71,7 @@ class ObisionAppsApplication {
     const cssProvider = new Gtk.CssProvider();
     // Try installed path first, then development path
     try {
-      cssProvider.load_from_path('/usr/share/com.obision.ObisionApps/style.css');
+      cssProvider.load_from_path('/usr/share/obision-apps/style.css');
     } catch (e) {
       cssProvider.load_from_path('data/style.css');
     }
@@ -108,7 +108,7 @@ class ObisionAppsApplication {
     try {
       // Try installed path first
       try {
-        builder.add_from_file('/usr/share/com.obision.ObisionApps/ui/main-window.ui');
+        builder.add_from_file('/usr/share/obision-apps/ui/main-window.ui');
       } catch (e) {
         builder.add_from_file('data/ui/main-window.ui');
       }

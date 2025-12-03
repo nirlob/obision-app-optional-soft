@@ -8,10 +8,10 @@ export class DataService {
 
   private readonly APPLICATIONS_FILE_DIRS = [
     "./data/",
-    "/usr/share/applications/obision-apps/",
-    "/usr/local/share/applications/obision-apps/",
-    "/var/lib/flatpak/exports/share/applications/obision-apps/",
-    "/var/lib/obision-apps/"
+    "/usr/local/share/obision-apps/",
+    "/var/lib/flatpak/exports/share/obision-apps/",
+    "/var/lib/obision-apps/",
+    "/usr/share/obision-apps/",
   ];
 
   private categories: Category[] = [];

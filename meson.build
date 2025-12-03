@@ -19,7 +19,7 @@ conf.set('version', meson.project_version())
 # Install directories
 bindir = get_option('bindir')
 datadir = get_option('datadir')
-pkgdatadir = datadir / app_id
+pkgdatadir = datadir / 'obision-apps'
 
 # Install the main script (from builddir, not src)
 install_data('builddir/main.js',
@@ -34,6 +34,20 @@ install_subdir('data/ui',
 # Install CSS file
 install_data('data/style.css',
   install_dir: pkgdatadir,
+)
+
+# Install applications.json
+install_data('data/applications.json',
+  install_dir: pkgdatadir,
+)
+
+# Install application and category icons
+install_subdir('data/icons/applications',
+  install_dir: pkgdatadir / 'icons',
+)
+
+install_subdir('data/icons/categories',
+  install_dir: pkgdatadir / 'icons',
 )
 
 # Install resources
