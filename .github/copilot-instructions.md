@@ -63,7 +63,7 @@ private dataService = DataService.instance;
 - Import from `@girs` in TypeScript: `import Gtk from "@girs/gtk-4.0"`
 - Build script converts to: `const { Gtk } = imports.gi;`
 - **Adwaita widgets**: Prefer `Adw.ExpanderRow`, `Adw.SwitchRow` for modern GNOME UI
-- **Resource loading**: Try GResource first (`add_from_resource('/com/obision/ObisionInstall/ui/...')`), fallback to file path
+- **Resource loading**: Try GResource first (`add_from_resource('/com/obision/ObisionApps/ui/...')`), fallback to file path
 - **File I/O**: Use `Gio.File.new_for_path()` + `load_contents()` for JSON
 
 ## UI Development

@@ -39,11 +39,11 @@ function cleanJSContent(content) {
         .replace(/this && this\.__importDefault.*?\n/g, '')
         .replace(/return \(mod && mod\.__esModule\).*?\n/g, '')
         .replace(/\};\s*\n?/g, '')
-        
+
         // Remove require statements and imports
         .replace(/const.*?require\(.*?\).*?;\s*\n?/g, '')
         .replace(/const.*?__importDefault.*?;\s*\n?/g, '')
-        
+
         // Replace TypeScript generated references
         .replace(/gtk_4_0_1\.default\./g, 'Gtk.')
         .replace(/gdk_4_0_1\.default\./g, 'Gdk.')
@@ -51,13 +51,13 @@ function cleanJSContent(content) {
         .replace(/glib_2_0_1\.default\./g, 'GLib.')
         .replace(/pango_1_0_1\.default\./g, 'Pango.')
         .replace(/adw_1_1\.default\./g, 'Adw.')
-        
+
         // Replace service references
         .replace(/logger_service_1\.LoggerService\.instance/g, 'LoggerService.instance')
         .replace(/logger_service_js_1\.LoggerService\.instance/g, 'LoggerService.instance')
         .replace(/settings_service_1\.SettingsService\.instance/g, 'SettingsService.instance')
         .replace(/settings_service_js_1\.SettingsService\.instance/g, 'SettingsService.instance')
-        
+
         // Remove other artifacts
         .replace(/\s*void 0;\s*\n?/g, '')
         .replace(/^\s*\n/gm, '') // Remove empty lines
@@ -189,7 +189,7 @@ if (fs.existsSync(installDialogFile)) {
     if (classStartIndex !== -1) {
         installDialogContent = installDialogContent.substring(classStartIndex);
     }
-    
+
     // Clean up TypeScript/CommonJS artifacts using our function
     installDialogContent = cleanJSContent(installDialogContent)
         .replace(/data_service_1\./g, '')
@@ -209,7 +209,7 @@ if (fs.existsSync(applicationInfoDialogFile)) {
     if (classStartIndex !== -1) {
         applicationInfoDialogContent = applicationInfoDialogContent.substring(classStartIndex);
     }
-    
+
     // Clean up TypeScript/CommonJS artifacts using our function
     applicationInfoDialogContent = cleanJSContent(applicationInfoDialogContent)
         .replace(/utils_service_1\./g, ''); // Additional cleanup for this component
@@ -245,20 +245,20 @@ const mainJsFile = path.join(BUILD_DIR, 'main.js');
 if (fs.existsSync(mainJsFile)) {
     console.log('📋 Adding main application...');
     let mainContent = fs.readFileSync(mainJsFile, 'utf8');
-    
+
     // Clean up the content - find the class definition start
-    const classStartIndex = mainContent.indexOf('class ObisionInstallApplication {');
+    const classStartIndex = mainContent.indexOf('class ObisionAppsApplication {');
     if (classStartIndex !== -1) {
         mainContent = mainContent.substring(classStartIndex);
     }
-    
+
     // Clean up TypeScript/CommonJS artifacts using our function
     mainContent = cleanJSContent(mainContent)
         .replace(/applications_list_js_1\.ApplicationsList/g, 'ApplicationsList')
         .replace(/applications_list_js_1\./g, '')
         .replace(/install_dialog_js_1\./g, '')
         .replace(/data_service_js_1\./g, '');
-    
+
     combinedContent += mainContent + '\n';
 }
 
