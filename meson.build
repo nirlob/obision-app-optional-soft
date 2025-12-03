@@ -88,8 +88,8 @@ install_data('data/icons/hicolor/scalable/apps/' + app_id + '.svg',
 
 # Create launcher script
 configure_file(
-  input: 'bin/obision-install.in',
-  output: 'obision-install',
+  input: 'bin/obision-apps.in',
+  output: 'obision-apps',
   configuration: conf,
   install: true,
   install_dir: bindir,

@@ -11,6 +11,7 @@ flatpak-repo/
 *.flatpak
 
 # Debian package build artifacts
+debian/obision-apps/
 debian/obision-install/
 debian/.debhelper/
 debian/files
