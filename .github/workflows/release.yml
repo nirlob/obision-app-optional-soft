@@ -24,37 +24,35 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y debhelper meson ninja-build libglib2.0-dev gjs dpkg-dev
+        sudo apt-get install -y debhelper meson ninja-build libglib2.0-dev gjs dpkg-dev build-essential
         npm install
         
-    - name: Build package
-      run: |
-        npm run deb-build || true
+    - name: Build TypeScript
+      run: npm run build
         
-    - name: List generated files
+    - name: Setup Meson
+      run: meson setup builddir --prefix=/usr
+      
+    - name: Compile with Meson
+      run: meson compile -C builddir
+      
+    - name: Build DEB package
       run: |
-        echo "Files in builddir:"
-        ls -la builddir/ || echo "builddir not found"
-        echo "Files in parent directory:"
-        ls -la ../*.deb || echo "No .deb files found"
-        
-    - name: Move DEB file if needed
-      run: |
-        if [ ! -f builddir/obision-apps.deb ]; then
-          mkdir -p builddir
-          if [ -f ../obision-apps_*.deb ]; then
-            mv ../obision-apps_*.deb builddir/obision-apps.deb
-            echo "Moved .deb to builddir/"
-          fi
-        fi
+        dpkg-buildpackage -us -uc -b
+        mkdir -p builddir
+        mv ../obision-apps_*.deb builddir/obision-apps.deb
         
     - name: Verify DEB exists
       run: |
         if [ ! -f builddir/obision-apps.deb ]; then
           echo "ERROR: DEB file not found!"
+          echo "Contents of builddir:"
+          ls -la builddir/ || echo "builddir not found"
+          echo "Contents of parent dir:"
+          ls -la ../
           exit 1
         fi
-        echo "DEB file found:"
+        echo "✅ DEB file found:"
         ls -lh builddir/obision-apps.deb
       
     - name: Create Release and Upload DEB
