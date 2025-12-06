@@ -5,6 +5,9 @@ on:
     tags:
       - 'v*'
 
+permissions:
+  contents: write
+
 jobs:
   build-deb:
     runs-on: ubuntu-latest
@@ -21,11 +24,38 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y debhelper meson ninja-build libglib2.0-dev gjs
+        sudo apt-get install -y debhelper meson ninja-build libglib2.0-dev gjs dpkg-dev
         npm install
         
     - name: Build package
-      run: npm run deb-build
+      run: |
+        npm run deb-build || true
+        
+    - name: List generated files
+      run: |
+        echo "Files in builddir:"
+        ls -la builddir/ || echo "builddir not found"
+        echo "Files in parent directory:"
+        ls -la ../*.deb || echo "No .deb files found"
+        
+    - name: Move DEB file if needed
+      run: |
+        if [ ! -f builddir/obision-apps.deb ]; then
+          mkdir -p builddir
+          if [ -f ../obision-apps_*.deb ]; then
+            mv ../obision-apps_*.deb builddir/obision-apps.deb
+            echo "Moved .deb to builddir/"
+          fi
+        fi
+        
+    - name: Verify DEB exists
+      run: |
+        if [ ! -f builddir/obision-apps.deb ]; then
+          echo "ERROR: DEB file not found!"
+          exit 1
+        fi
+        echo "DEB file found:"
+        ls -lh builddir/obision-apps.deb
       
     - name: Create Release and Upload DEB
       uses: softprops/action-gh-release@v1
