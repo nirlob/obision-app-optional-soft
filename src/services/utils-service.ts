@@ -1,6 +1,6 @@
 import Gio from '@girs/gio-2.0';
+import GLib from '@girs/glib-2.0';
 import { Application } from '../interfaces/application';
-import { argv } from 'process';
 import { LoggerService } from './logger-service';
 
 export class UtilsService {
@@ -13,6 +13,12 @@ export class UtilsService {
     }
 
     return UtilsService._instance;
+  }
+
+  public isDevelopmentMode(): boolean {
+    // Verificar variable de entorno NODE_ENV
+    const nodeEnv = GLib.getenv('NODE_ENV');
+    return nodeEnv === 'development';
   }
 
   public executeCommand(command: string, args: string[] = []): [string, string] {

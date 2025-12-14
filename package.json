@@ -1,12 +1,12 @@
 {
   "name": "obision-apps",
-  "version": "1.7.0",
+  "version": "0.0.0",
   "description": "Rapid applications installer",
   "main": "builddir/main.js",
   "scripts": {
     "build": "node scripts/build.js",
     "dev": "tsc --watch",
-    "start": "npm run build && glib-compile-schemas data/ && GSETTINGS_SCHEMA_DIR=data ./builddir/main.js",
+    "start": "NODE_ENV=development npm run build && glib-compile-schemas data/ && GSETTINGS_SCHEMA_DIR=data ./builddir/main.js",
     "clean": "rm -rf builddir && rm -rf mesonbuilddir && rm -rf debian",
     "meson-setup": "meson setup mesonbuilddir --prefix=/usr",
     "meson-compile": "meson compile -C mesonbuilddir",

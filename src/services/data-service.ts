@@ -2,6 +2,7 @@ import Gio from "@girs/gio-2.0";
 import { Category } from "../interfaces/category";
 import { Application } from "../interfaces/application";
 import { LoggerService } from "./logger-service";
+import { UtilsService } from "./utils-service";
 
 export class DataService {
   static _instance: DataService;
@@ -18,6 +19,7 @@ export class DataService {
   private applications: Application[] = [];
   private applicationsFileDir: string = "";
   private logger = LoggerService.instance;
+  private utilsService = UtilsService.instance;
 
   private constructor() {
     this.searchApplicationsFileDir();
@@ -78,12 +80,12 @@ export class DataService {
       return iconPath;
     }
     
-    // If applicationsFileDir already ends with "data/", just append the icon path
-    if (this.applicationsFileDir.endsWith('data/')) {
-      return this.applicationsFileDir + iconPath.replace(/^data\//, '');
+    // En modo desarrollo, añadir prefijo "data/" a la ruta del icono
+    if (this.utilsService.isDevelopmentMode()) {
+      return 'data/' + iconPath;
     }
     
-    // Otherwise, append the full icon path (including "data/")
+    // En producción, usar la ruta del directorio de aplicaciones
     return this.applicationsFileDir + iconPath;
   }
 

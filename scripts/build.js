@@ -156,7 +156,8 @@ if (fs.existsSync(dataServiceFile)) {
     }
 
     // Clean up TypeScript/CommonJS artifacts using our function
-    dataServiceContent = cleanJSContent(dataServiceContent);
+    dataServiceContent = cleanJSContent(dataServiceContent)
+        .replace(/utils_service_1\./g, ''); // Additional cleanup for utils-service references
 
     combinedContent += dataServiceContent + '\n';
 }

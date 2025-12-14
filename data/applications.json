@@ -4,55 +4,55 @@
       "id": 1,
       "title": "Development Tools",
       "description": "Tools for software development and coding.",
-      "icon": "data/icons/categories/develop.png"
+      "icon": "icons/categories/develop.png"
     },
     {
       "id": 2,
       "title": "Games and Entertainment",
       "description": "Games and entertainment applications.",
-      "icon": "data/icons/categories/games.png"
+      "icon": "icons/categories/games.png"
     },
     {
       "id": 3,
       "title": "Office and Productivity",
       "description": "Office and productivity applications.",
-      "icon": "data/icons/categories/office.png"
+      "icon": "icons/categories/office.png"
     },
     {
       "id": 4,
       "title": "Multimedia",
       "description": "Multimedia applications for audio and video editing.",
-      "icon": "data/icons/categories/multimedia.png"
+      "icon": "icons/categories/multimedia.png"
     },
     {
       "id": 5,
       "title": "Design and Creativity",
       "description": "Applications for graphic design, illustration, and creativity.",
-      "icon": "data/icons/categories/design.png"
+      "icon": "icons/categories/design.png"
     },
     {
       "id": 6,
       "title": "Internet and Communication",
       "description": "Applications for internet browsing, email, and communication.",
-      "icon": "data/icons/categories/internet.png"
+      "icon": "icons/categories/internet.png"
     },
     {
       "id": 7,
       "title": "Tools",
       "description": "Utility applications for system management and maintenance.",
-      "icon": "data/icons/categories/tools.png"
+      "icon": "icons/categories/tools.png"
     },
     {
       "id": 8,
       "title": "Education",
       "description": "Educational applications for learning and teaching.",
-      "icon": "data/icons/categories/education.png"
+      "icon": "icons/categories/education.png"
     },
     {
       "id": 9,
       "title": "Science and Engineering",
       "description": "Applications for scientific computing and engineering design.",
-      "icon": "data/icons/categories/science.png"
+      "icon": "icons/categories/science.png"
     }
   ],
   "applications": [
@@ -61,7 +61,7 @@
       "description": "Brave Browser is a free and open-source web browser developed by Brave Software, Inc. based on the Chromium web browser. It is designed to prioritize user privacy and security by blocking ads and website trackers by default.",
       "packageName": "com.brave.Browser",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/brave.png",
+      "icon": "icons/applications/brave.png",
       "categoryId": 6
     },
     {
@@ -69,7 +69,7 @@
       "description": "Calibre is a free and open-source e-book manager. It allows users to organize, convert, and read e-books in various formats. Calibre also includes features for syncing with e-book readers and downloading news from the web to convert into e-book format.",
       "packageName": "com.calibre_ebook.calibre",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/calibre.png",
+      "icon": "icons/applications/calibre.png",
       "categoryId": 3
     },
     {
@@ -77,7 +77,7 @@
       "description": "GIMP (GNU Image Manipulation Program) is a free and open-source raster graphics editor used for tasks such as photo retouching, image editing, and image composition. It provides a wide range of tools and features for graphic designers, photographers, and illustrators.",
       "packageName": "org.gimp.GIMP",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/gimp.png",
+      "icon": "icons/applications/gimp.png",
       "categoryId": 5
     },
     {
@@ -85,7 +85,7 @@
       "description": "Inkscape is a free and open-source vector graphics editor used for creating and editing scalable vector graphics (SVG) files. It offers a variety of tools for drawing, shaping, and text manipulation, making it suitable for graphic design, illustration, and web design.",
       "packageName": "org.inkscape.Inkscape",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/inkscape.png",
+      "icon": "icons/applications/inkscape.png",
       "categoryId": 5
     },
     {
@@ -93,7 +93,7 @@
       "description": "Krita is a free and open-source digital painting software designed for artists. It offers a wide range of brushes, tools, and features for creating stunning digital artwork.",
       "packageName": "org.kde.krita",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/krita.png",
+      "icon": "icons/applications/krita.png",
       "categoryId": 5
     },
     {
@@ -101,7 +101,7 @@
       "description": "Audacity is a free and open-source digital audio editor and recording application. It provides a range of tools for recording, editing, and mixing audio tracks, making it suitable for podcasting, music production, and sound design.",
       "packageName": "org.audacityteam.Audacity",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/audacity.png",
+      "icon": "icons/applications/audacity.png",
       "categoryId": 4
     },
     {
@@ -109,7 +109,7 @@
       "description": "VLC Media Player is a free and open-source multimedia player that supports a wide range of audio and video formats. It is known for its versatility, ease of use, and ability to play almost any media file without the need for additional codecs.",
       "packageName": "org.videolan.VLC",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/vlc.png",
+      "icon": "icons/applications/vlc.png",
       "categoryId": 4
     },
     {
@@ -117,7 +117,7 @@
       "description": "Photopea is a free and open-source web-based image editor that supports various file formats, including PSD, XCF, and Sketch. It offers a wide range of tools for photo editing, graphic design, and digital art.",
       "packageName": "org.photopea.Photopea",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/photopea.svg",
+      "icon": "icons/applications/photopea.svg",
       "categoryId": 5
     },
     {
@@ -125,7 +125,7 @@
       "description": "Chrome is a free and open-source web browser developed by Google. It is known for its speed, simplicity, and security features.",
       "packageName": "org.chromium.Chrome",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/chrome.png",
+      "icon": "icons/applications/chrome.png",
       "categoryId": 6
     },
     {
@@ -133,7 +133,7 @@
       "description": "IntelliJ IDEA is a powerful and feature-rich integrated development environment (IDE) for Java and other programming languages. It offers advanced code editing, debugging, and testing tools to enhance developer productivity.",
       "packageName": "com.jetbrains.IntelliJ-IDEA-Community",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/intellij.png",
+      "icon": "icons/applications/intellij.png",
       "categoryId": 1
     },
     {
@@ -141,7 +141,7 @@
       "description": "WebStorm is a powerful and feature-rich integrated development environment (IDE) for JavaScript and web development. It offers advanced code editing, debugging, and testing tools to enhance developer productivity.",
       "packageName": "com.jetbrains.WebStorm",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/webstorm.png",
+      "icon": "icons/applications/webstorm.png",
       "categoryId": 1
     },
     {
@@ -149,7 +149,7 @@
       "description": "Microsoft Edge is a free and open-source web browser developed by Microsoft. It is built on the Chromium engine and offers features such as enhanced security, privacy controls, and integration with Microsoft services.",
       "packageName": "com.microsoft.Edge",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/edge.png",
+      "icon": "icons/applications/edge.png",
       "categoryId": 6
     },
     {
@@ -157,7 +157,7 @@
       "description": "OBS Studio (Open Broadcaster Software) is a free and open-source software for video recording and live streaming. It provides a range of features for capturing and mixing video and audio in real-time.",
       "packageName": "com.obsproject.Studio",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/obs-studio.png",
+      "icon": "icons/applications/obs-studio.png",
       "categoryId": 4
     },
     {
@@ -165,7 +165,7 @@
       "description": "Kdenlive is a powerful free and open source cross-platform video editing software. It provides professional-grade non-linear video editing with multi-track support.",
       "packageName": "org.kde.kdenlive",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/kdenlive.png",
+      "icon": "icons/applications/kdenlive.png",
       "categoryId": 4
     },
     {
@@ -173,7 +173,7 @@
       "description": "Shotcut is a free, open source, cross-platform video editor with support for hundreds of audio and video formats and codecs. It features extensive filter and effect options.",
       "packageName": "org.shotcut.Shotcut",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/shotcut.png",
+      "icon": "icons/applications/shotcut.png",
       "categoryId": 4
     },
     {
@@ -181,7 +181,7 @@
       "description": "Spotify is a digital music service that gives you access to millions of songs, podcasts and videos from artists all over the world.",
       "packageName": "com.spotify.Client",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/spotify.png",
+      "icon": "icons/applications/spotify.png",
       "categoryId": 4
     },
     {
@@ -189,7 +189,7 @@
       "description": "HandBrake is a tool for converting video from nearly any format to a selection of modern, widely supported codecs. It's perfect for making videos compatible with any device.",
       "packageName": "fr.handbrake.ghb",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/handbrake.png",
+      "icon": "icons/applications/handbrake.png",
       "categoryId": 4
     },
     {
@@ -197,7 +197,7 @@
       "description": "Opera is a free and open-source web browser developed by Opera Software. It offers a range of features such as a built-in ad blocker, VPN, and battery saver mode.",
       "packageName": "com.opera.Opera",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/opera.png",
+      "icon": "icons/applications/opera.png",
       "categoryId": 6
     },
     {
@@ -205,7 +205,7 @@
       "description": "Transmission is a lightweight and easy-to-use BitTorrent client that allows users to download and share files over the BitTorrent network.",
       "packageName": "com.transmissionbt.Transmission",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/transmission.png",
+      "icon": "icons/applications/transmission.png",
       "categoryId": 6
     },
     {
@@ -213,7 +213,7 @@
       "description": "Discord is a voice, video and text communication service to talk and hang out with your friends and communities. Perfect for gaming communities and teams.",
       "packageName": "com.discordapp.Discord",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/discord.png",
+      "icon": "icons/applications/discord.png",
       "categoryId": 6
     },
     {
@@ -221,7 +221,7 @@
       "description": "Slack is a channel-based messaging platform for team collaboration. It brings team communication and collaboration into one place.",
       "packageName": "com.slack.Slack",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/slack.png",
+      "icon": "icons/applications/slack.png",
       "categoryId": 6
     },
     {
@@ -229,7 +229,7 @@
       "description": "Zoom is a cloud-based video communications app that allows you to set up virtual video and audio conferencing, webinars, live chats, and screen-sharing.",
       "packageName": "us.zoom.Zoom",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/zoom.png",
+      "icon": "icons/applications/zoom.png",
       "categoryId": 6
     },
     {
@@ -237,7 +237,7 @@
       "description": "qBittorrent is a free and open-source BitTorrent client. It aims to provide an alternative to µTorrent with a clean and user-friendly interface.",
       "packageName": "org.qbittorrent.qBittorrent",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/qbittorrent.png",
+      "icon": "icons/applications/qbittorrent.png",
       "categoryId": 6
     },
     {
@@ -245,7 +245,7 @@
       "description": "FileZilla is a fast and reliable cross-platform FTP, FTPS and SFTP client with lots of useful features and an intuitive graphical user interface.",
       "packageName": "org.filezillaproject.Filezilla",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/filezilla.png",
+      "icon": "icons/applications/filezilla.png",
       "categoryId": 6
     },
     {
@@ -253,7 +253,7 @@
       "description": "Steam is a digital distribution platform for video games developed by Valve Corporation. It offers a wide range of games, community features, and tools for game developers.",
       "packageName": "com.valvesoftware.Steam",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/steam.png",
+      "icon": "icons/applications/steam.png",
       "categoryId": 2
     },
     {
@@ -261,7 +261,7 @@
       "description": "Lutris is an open gaming platform for Linux. It helps you install and manage your games in a unified interface. It supports a wide variety of games from native Linux games to Windows games via Wine.",
       "packageName": "net.lutris.Lutris",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/lutris.png",
+      "icon": "icons/applications/lutris.png",
       "categoryId": 2
     },
     {
@@ -269,7 +269,7 @@
       "description": "RetroArch is a frontend for emulators, game engines and media players. It enables you to run classic games on a wide range of computers and consoles through its slick graphical interface.",
       "packageName": "org.libretro.RetroArch",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/retroarch.png",
+      "icon": "icons/applications/retroarch.png",
       "categoryId": 2
     },
     {
@@ -277,7 +277,7 @@
       "description": "SuperTuxKart is a free 3D kart racing game featuring mascots of open-source projects. Race against friends with various characters on different tracks with power-ups and items.",
       "packageName": "net.supertuxkart.SuperTuxKart",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/supertuxkart.png",
+      "icon": "icons/applications/supertuxkart.png",
       "categoryId": 2
     },
     {
@@ -285,7 +285,7 @@
       "description": "0 A.D. is a free, open-source, historical Real Time Strategy (RTS) game currently under development by Wildfire Games. It's a game of ancient warfare, economy and conquest.",
       "packageName": "com.play0ad.zeroad",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/0ad.png",
+      "icon": "icons/applications/0ad.png",
       "categoryId": 2
     },
     {
@@ -293,7 +293,7 @@
       "description": "Minetest is a free, open-source voxel game engine with easy modding and game creation. It's inspired by Minecraft and features similar gameplay with block building and mining.",
       "packageName": "net.minetest.Minetest",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/minetest.png",
+      "icon": "icons/applications/minetest.png",
       "categoryId": 2
     },
     {
@@ -301,7 +301,7 @@
       "description": "Visual Studio Code is a free and open-source code editor developed by Microsoft. It offers a range of features such as syntax highlighting, debugging, and extensions for various programming languages.",
       "packageName": "com.visualstudio.code",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/vscode.png",
+      "icon": "icons/applications/vscode.png",
       "categoryId": 1
     },
     {
@@ -309,7 +309,7 @@
       "description": "WPS Office is a free and open-source office suite that includes a word processor, spreadsheet application, and presentation software. It is compatible with Microsoft Office file formats.",
       "packageName": "com.wps.Office",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/wps.png",
+      "icon": "icons/applications/wps.png",
       "categoryId": 3
     },
     {
@@ -317,7 +317,7 @@
       "description": "Shortwave Radio is a free and open-source application for listening to shortwave radio stations from around the world. It provides a user-friendly interface and a wide selection of stations.",
       "packageName": "com.github.maoschanz.drawing",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/shortwave.png",
+      "icon": "icons/applications/shortwave.png",
       "categoryId": 4
     },
     {
@@ -325,7 +325,7 @@
       "description": "Natron is a free and open-source node-based compositing software for visual effects and motion graphics. It offers a range of tools for 2D and 3D compositing, keying, and color correction.",
       "packageName": "fr.natron.Natron",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/natron.png",
+      "icon": "icons/applications/natron.png",
       "categoryId": 5
     },
     {
@@ -333,7 +333,7 @@
       "description": "DBeaver is a free and open-source database management tool that supports a wide range of database systems. It provides a user-friendly interface for managing and querying databases.",
       "packageName": "io.dbeaver.DBeaverCommunity",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/dbeaver.png",
+      "icon": "icons/applications/dbeaver.png",
       "categoryId": 1
     },
     {
@@ -341,7 +341,7 @@
       "description": "Monitorets is a free and open-source application for monitoring system resources and performance. It provides real-time graphs and statistics for CPU, memory, disk, and network usage.",
       "packageName": "io.github.jorchube.monitorets",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/monitorets.png",
+      "icon": "icons/applications/monitorets.png",
       "categoryId": 7
     },
     {
@@ -349,7 +349,7 @@
       "description": "Opentoonz is a free and open-source 2D animation software used for creating animated films and cartoons. It offers a range of tools for drawing, rigging, and animating characters and scenes.",
       "packageName": "io.github.OpenToonz",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/opentoonz.png",
+      "icon": "icons/applications/opentoonz.png",
       "categoryId": 5
     },
     {
@@ -357,7 +357,7 @@
       "description": "LMMS (Linux MultiMedia Studio) is a free and open-source digital audio workstation (DAW) used for music production. It provides a range of tools for composing, editing, and mixing music tracks.",
       "packageName": "io.lmms.LMMS",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/lmms.png",
+      "icon": "icons/applications/lmms.png",
       "categoryId": 5
     },
     {
@@ -365,7 +365,7 @@
       "description": "Fluent Reader is a free and open-source RSS reader application that allows users to subscribe to and read RSS feeds in a user-friendly interface.",
       "packageName": "me.hyliu.fluentreader",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/fluentreader.png",
+      "icon": "icons/applications/fluentreader.png",
       "categoryId": 3
     },
     {
@@ -373,7 +373,7 @@
       "description": "Scribus is a free and open-source desktop publishing software used for creating professional-quality documents such as brochures, magazines, and newsletters.",
       "packageName": "net.scribus.Scribus",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/scribus.png",
+      "icon": "icons/applications/scribus.png",
       "categoryId": 3
     },
     {
@@ -381,7 +381,7 @@
       "description": "Blender is a free and open-source 3D creation suite that supports the entire 3D pipeline, including modeling, rigging, animation, simulation, rendering, compositing, and motion tracking. It is widely used for creating animated films, visual effects, art, 3D printed models, and video games.",
       "packageName": "org.blender.Blender",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/blender.png",
+      "icon": "icons/applications/blender.png",
       "categoryId": 5
     },
     {
@@ -389,7 +389,7 @@
       "description": "Darktable is a free and open-source photography workflow application and raw developer. It provides a range of tools for managing and editing digital photos, including non-destructive editing and advanced color correction.",
       "packageName": "org.darktable.Darktable",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/darktable.png",
+      "icon": "icons/applications/darktable.png",
       "categoryId": 5
     },
     {
@@ -397,7 +397,7 @@
       "description": "FreeCAD is a parametric 3D modeler made primarily to design real-life objects of any size. It's perfect for mechanical engineering and product design.",
       "packageName": "org.freecadweb.FreeCAD",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/freecad.png",
+      "icon": "icons/applications/freecad.png",
       "categoryId": 5
     },
     {
@@ -405,7 +405,7 @@
       "description": "RawTherapee is a powerful cross-platform raw photo processing program. It provides a wide variety of tools to enhance your photographs including advanced control over colors and tones.",
       "packageName": "com.rawtherapee.RawTherapee",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/rawtherapee.png",
+      "icon": "icons/applications/rawtherapee.png",
       "categoryId": 5
     },
     {
@@ -413,7 +413,7 @@
       "description": "AisleRiot Solitaire is a free and open-source collection of solitaire card games for GNOME desktop environment. It offers a variety of solitaire games with different rules and layouts.",
       "packageName": "org.gnome.Aisleriot",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/aisleriot.png",
+      "icon": "icons/applications/aisleriot.png",
       "categoryId": 2
     },
     {
@@ -421,7 +421,7 @@
       "description": "GNOME Boxes is a free and open-source virtualization application that allows users to create, manage, and run virtual machines on their GNOME desktop environment.",
       "packageName": "org.gnome.Boxes",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/boxes.png",
+      "icon": "icons/applications/boxes.png",
       "categoryId": 7
     },
     {
@@ -429,7 +429,7 @@
       "description": "GNOME Builder is a free and open-source integrated development environment (IDE) for GNOME applications. It provides a range of tools and features for developing, debugging, and testing GNOME applications.",
       "packageName": "org.gnome.Builder",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/gnome-builder.png",
+      "icon": "icons/applications/gnome-builder.png",
       "categoryId": 1
     },
     {
@@ -437,7 +437,7 @@
       "description": "Font Downloader is a free and open-source application that allows users to browse, download, and install fonts from various online sources.",
       "packageName": "org.gustavoperedo.FontDownloader",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/fontdownloader.png",
+      "icon": "icons/applications/fontdownloader.png",
       "categoryId": 7
     },
     {
@@ -445,7 +445,7 @@
       "description": "Flatseal is a graphical utility to review and modify permissions from your Flatpak applications. It allows you to manage what resources Flatpak apps can access.",
       "packageName": "com.github.tchx84.Flatseal",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/flatseal.png",
+      "icon": "icons/applications/flatseal.png",
       "categoryId": 7
     },
     {
@@ -453,7 +453,7 @@
       "description": "BleachBit is a free and open-source disk space cleaner, privacy manager, and system optimizer. It removes unwanted files to free disk space and maintain privacy.",
       "packageName": "org.bleachbit.BleachBit",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/bleachbit.png",
+      "icon": "icons/applications/bleachbit.png",
       "categoryId": 7
     },
     {
@@ -461,7 +461,7 @@
       "description": "KeePassXC is a free and open-source password manager. It helps you to manage your passwords in a secure way with strong encryption and modern features.",
       "packageName": "org.keepassxc.KeePassXC",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/keepassxc.png",
+      "icon": "icons/applications/keepassxc.png",
       "categoryId": 7
     },
     {
@@ -469,7 +469,7 @@
       "description": "Bitwarden is a free and open-source password management service. It stores sensitive information such as website credentials in an encrypted vault.",
       "packageName": "com.bitwarden.desktop",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/bitwarden.png",
+      "icon": "icons/applications/bitwarden.png",
       "categoryId": 7
     },
     {
@@ -477,7 +477,7 @@
       "description": "LibreOffice is a free and open-source office suite that includes a word processor, spreadsheet application, presentation software, and more. It is compatible with Microsoft Office file formats and offers a range of features for productivity and collaboration.",
       "packageName": "org.libreoffice.LibreOffice",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/libreoffice-logo.png",
+      "icon": "icons/applications/libreoffice-logo.png",
       "categoryId": 3
     },
     {
@@ -485,7 +485,7 @@
       "description": "Mixxx is a free and open-source DJ software that allows users to mix and manipulate digital music tracks in real-time. It provides a range of features for DJs, including beatmatching, looping, and effects.",
       "packageName": "org.mixxx.Mixxx",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/mixxx.png",
+      "icon": "icons/applications/mixxx.png",
       "categoryId": 5
     },
     {
@@ -493,7 +493,7 @@
       "description": "Thunderbird is a free and open-source email client developed by the Mozilla Foundation. It offers a range of features for managing email accounts, including support for multiple accounts, advanced search, and customizable themes.",
       "packageName": "org.mozilla.Thunderbird",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/thunderbird.png",
+      "icon": "icons/applications/thunderbird.png",
       "categoryId": 3
     },
     {
@@ -501,7 +501,7 @@
       "description": "OnlyOffice is a free office suite that combines text, spreadsheet and presentation editors allowing to create, view and edit documents. It is fully compatible with Office Open XML formats.",
       "packageName": "org.onlyoffice.desktopeditors",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/onlyoffice.png",
+      "icon": "icons/applications/onlyoffice.png",
       "categoryId": 3
     },
     {
@@ -509,7 +509,7 @@
       "description": "Obsidian is a powerful knowledge base that works on top of a local folder of plain text Markdown files. It's a note-taking and knowledge management application.",
       "packageName": "md.obsidian.Obsidian",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/obsidian.png",
+      "icon": "icons/applications/obsidian.png",
       "categoryId": 3
     },
     {
@@ -517,7 +517,7 @@
       "description": "Joplin is an open source note-taking and to-do application. It handles a large number of notes organized into notebooks and can sync with various cloud services.",
       "packageName": "net.cozic.joplin_desktop",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/joplin.png",
+      "icon": "icons/applications/joplin.png",
       "categoryId": 3
     },
     {
@@ -525,7 +525,7 @@
       "description": "Zotero is a free, easy-to-use tool to help you collect, organize, cite, and share research. It's a reference manager for researchers and students.",
       "packageName": "org.zotero.Zotero",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/zotero.png",
+      "icon": "icons/applications/zotero.png",
       "categoryId": 3
     },
     {
@@ -533,7 +533,7 @@
       "description": "Pencil2D is a free and open-source 2D animation software used for creating hand-drawn animations. It offers a simple and intuitive interface with a range of tools for drawing, coloring, and animating.",
       "packageName": "org.pencil2d.Pencil2D",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/pencil2d.png",
+      "icon": "icons/applications/pencil2d.png",
       "categoryId": 5
     },
     {
@@ -541,7 +541,7 @@
       "description": "Synfig Studio is a free and open-source 2D vector animation software used for creating high-quality animations. It offers a range of tools for vector drawing, keyframe animation, and special effects.",
       "packageName": "org.synfig.SynfigStudio",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/synfig.png",
+      "icon": "icons/applications/synfig.png",
       "categoryId": 5
     },
     {
@@ -549,7 +549,7 @@
       "description": "Telegram is a free and open-source instant messaging application that focuses on speed and security. It offers features such as end-to-end encryption, group chats, and multimedia sharing.",
       "packageName": "org.telegram.Telegram",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/telegram.png",
+      "icon": "icons/applications/telegram.png",
       "categoryId": 3
     },
     {
@@ -557,7 +557,7 @@
       "description": "Java JDK is a free and open-source software development kit used for developing Java applications. It includes a runtime environment, compiler, and various tools for building and debugging Java applications.",
       "packageName": "openjdk-21-jdk",
       "packageType": "DEBIAN",
-      "icon": "data/icons/applications/java.png",
+      "icon": "icons/applications/java.png",
       "categoryId": 1
     },
     {
@@ -565,7 +565,7 @@
       "description": "Git is a free and open-source distributed version control system used for tracking changes in source code during software development. It allows multiple developers to work on a project simultaneously and provides tools for branching, merging, and collaboration.",
       "packageName": "git",
       "packageType": "DEBIAN",
-      "icon": "data/icons/applications/git.png",
+      "icon": "icons/applications/git.png",
       "categoryId": 1
     },
     {
@@ -573,7 +573,7 @@
       "description": "Build Essentials is a package that includes a list of applications which are essential for building Debian applications. It includes the GNU Compiler Collection (GCC), make, and other utilities.",
       "packageName": "build-essential",
       "packageType": "DEBIAN",
-      "icon": "data/icons/applications/build-essential.png",
+      "icon": "icons/applications/build-essential.png",
       "categoryId": 1
     },
     {
@@ -581,7 +581,7 @@
       "description": "Node.js is a free and open-source JavaScript runtime built on Chrome's V8 JavaScript engine. It allows developers to run JavaScript code outside of a web browser, making it suitable for server-side development and building scalable network applications.",
       "packageName": "nodejs",
       "packageType": "DEBIAN",
-      "icon": "data/icons/applications/nodejs.png",
+      "icon": "icons/applications/nodejs.png",
       "categoryId": 1
     },
     {
@@ -589,7 +589,7 @@
       "description": "npm (Node Package Manager) is a free and open-source package manager for JavaScript programming language. It is the default package manager for the Node.js runtime environment and allows developers to install, share, and manage dependencies for their JavaScript projects.",
       "packageName": "npm",
       "packageType": "DEBIAN",
-      "icon": "data/icons/applications/npm.png",
+      "icon": "icons/applications/npm.png",
       "categoryId": 1
     },
     {
@@ -597,7 +597,7 @@
       "description": "Postman is a collaboration platform for API development. It simplifies each step of building an API and streamlines collaboration so you can create better APIs faster.",
       "packageName": "com.getpostman.Postman",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/postman.png",
+      "icon": "icons/applications/postman.png",
       "categoryId": 1
     },
     {
@@ -605,7 +605,7 @@
       "description": "GitKraken is a powerful and intuitive Git GUI client that helps developers visualize and manage their Git repositories with ease. It offers a clean interface with advanced features for branching, merging, and collaboration.",
       "packageName": "com.axosoft.GitKraken",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/gitkraken.png",
+      "icon": "icons/applications/gitkraken.png",
       "categoryId": 1
     },
     {
@@ -613,7 +613,7 @@
       "description": "PyCharm Community Edition is a free and open-source Python IDE by JetBrains. It provides smart code completion, code inspections, on-the-fly error highlighting, and quick-fixes.",
       "packageName": "com.jetbrains.PyCharm-Community",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/pycharm.png",
+      "icon": "icons/applications/pycharm.png",
       "categoryId": 1
     },
     {
@@ -621,7 +621,7 @@
       "description": "Android Studio is the official integrated development environment (IDE) for Android app development, based on IntelliJ IDEA. It provides code editing, debugging, and performance tooling for building Android apps.",
       "packageName": "com.google.AndroidStudio",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/android-studio.png",
+      "icon": "icons/applications/android-studio.png",
       "categoryId": 1
     },
     {
@@ -629,7 +629,7 @@
       "description": "Docker Desktop is an application for MacOS and Windows machines that enables you to build and share containerized applications. It includes Docker Engine, Docker CLI client, Docker Compose, and Kubernetes.",
       "packageName": "docker.io",
       "packageType": "DEBIAN",
-      "icon": "data/icons/applications/docker.png",
+      "icon": "icons/applications/docker.png",
       "categoryId": 1
     },
     {
@@ -637,7 +637,7 @@
       "description": "Anki is a program which makes remembering things easy. It uses spaced repetition to help you learn and remember facts efficiently. Perfect for language learning and exam preparation.",
       "packageName": "net.ankiweb.Anki",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/anki.png",
+      "icon": "icons/applications/anki.png",
       "categoryId": 8
     },
     {
@@ -645,7 +645,7 @@
       "description": "GeoGebra is a dynamic mathematics software for all levels of education that brings together geometry, algebra, spreadsheets, graphing, statistics and calculus in one package.",
       "packageName": "org.geogebra.GeoGebra",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/geogebra.png",
+      "icon": "icons/applications/geogebra.png",
       "categoryId": 8
     },
     {
@@ -653,7 +653,7 @@
       "description": "Stellarium is a free open source planetarium for your computer. It shows a realistic sky in 3D, just like what you see with the naked eye, binoculars or a telescope.",
       "packageName": "org.stellarium.Stellarium",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/stellarium.png",
+      "icon": "icons/applications/stellarium.png",
       "categoryId": 8
     },
     {
@@ -661,7 +661,7 @@
       "description": "Scratch is a free programming language and online community where you can create your own interactive stories, games, and animations. Designed for children and beginners.",
       "packageName": "org.scratch.Scratch",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/scratch.png",
+      "icon": "icons/applications/scratch.png",
       "categoryId": 8
     },
     {
@@ -669,7 +669,7 @@
       "description": "GNU Octave is a high-level programming language primarily intended for scientific computing and numerical computation. It is compatible with MATLAB.",
       "packageName": "org.octave.Octave",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/octave.png",
+      "icon": "icons/applications/octave.png",
       "categoryId": 9
     },
     {
@@ -677,7 +677,7 @@
       "description": "KiCad is a free software suite for electronic design automation (EDA). It facilitates the design of schematics for electronic circuits and their conversion to PCB designs.",
       "packageName": "org.kicad.KiCad",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/kicad.png",
+      "icon": "icons/applications/kicad.png",
       "categoryId": 9
     },
     {
@@ -685,7 +685,7 @@
       "description": "LibreCAD is a free and open-source 2D CAD application for Windows, Apple and Linux. It reads and writes DXF files, the standard format for CAD data exchange.",
       "packageName": "org.librecad.librecad",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/librecad.png",
+      "icon": "icons/applications/librecad.png",
       "categoryId": 9
     },
     {
@@ -693,7 +693,7 @@
       "description": "Fritzing is an open-source hardware initiative that makes electronics accessible as a creative material for anyone. It's perfect for designing Arduino and electronics projects.",
       "packageName": "org.fritzing.Fritzing",
       "packageType": "FLATPAK",
-      "icon": "data/icons/applications/fritzing.png",
+      "icon": "icons/applications/fritzing.png",
       "categoryId": 9
     }
   ]
