@@ -87,8 +87,8 @@ jobs:
         cp ../obision-app-optional-soft/builddir/obision-app-optional-soft.deb \
            debs/obision-app-optional-soft_${VERSION}_all.deb
         
-        # Regenerate Packages file
-        dpkg-scanpackages --arch all --multiversion debs /dev/null > Packages
+        # Regenerate Packages file (without override file to read from .deb control)
+        dpkg-scanpackages --multiversion debs > Packages
         gzip -k -f Packages
         
         # Commit and push (including deletions)
