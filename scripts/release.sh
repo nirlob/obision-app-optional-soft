@@ -30,13 +30,14 @@ npm version $NEW_VERSION --no-git-tag-version
 echo "📝 Updating meson.build..."
 sed -i "s/version: '$CURRENT_VERSION'/version: '$NEW_VERSION'/" meson.build
 
-# Update debian/changelog
-echo "📝 Updating debian/changelog..."
-CURRENT_DATE=$(date -R)
-AUTHOR_NAME="Jose Francisco Gonzalez"
-AUTHOR_EMAIL="jfgs1609@gmail.com"
+# Update debian/changelog (if it exists)
+if [ -f "debian/changelog" ]; then
+  echo "📝 Updating debian/changelog..."
+  CURRENT_DATE=$(date -R)
+  AUTHOR_NAME="Jose Francisco Gonzalez"
+  AUTHOR_EMAIL="jfgs1609@gmail.com"
 
-cat > debian/changelog.tmp << EOF
+  cat > debian/changelog.tmp << EOF
 obision-app-optional-soft ($NEW_VERSION) unstable; urgency=medium
 
   * Release version $NEW_VERSION
@@ -45,12 +46,18 @@ obision-app-optional-soft ($NEW_VERSION) unstable; urgency=medium
 
 EOF
 
-cat debian/changelog >> debian/changelog.tmp
-mv debian/changelog.tmp debian/changelog
-
-# Commit changes
-echo "💾 Committing changes..."
-git add package.json meson.build debian/changelog package-lock.json
+  cat debian/changelog >> debian/changelog.tmp
+  mv debian/changelog.tmp debian/changelog
+  
+  # Commit changes including debian/changelog
+  echo "💾 Committing changes..."
+  git add package.json meson.build debian/changelog package-lock.json
+else
+  echo "⚠️  Skipping debian/changelog (file not found)"
+  # Commit changes without debian/changelog
+  echo "💾 Committing changes..."
+  git add package.json meson.build package-lock.json
+fi
 git commit -m "Release version $NEW_VERSION"
 
 # Create tag

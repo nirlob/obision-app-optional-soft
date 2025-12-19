@@ -1,0 +1,31 @@
+Source: obision-app-optional-soft
+Section: utils
+Priority: optional
+Maintainer: Jose Francisco Gonzalez <jfgs1609@gmail.com>
+Build-Depends: debhelper-compat (= 13),
+               meson,
+               libgtk-4-dev,
+               libadwaita-1-dev,
+               gjs,
+               nodejs,
+               npm
+Standards-Version: 4.6.0
+Homepage: https://github.com/nirlob/obision-app-optional-soft
+
+Package: obision-app-optional-soft
+Architecture: all
+Depends: ${misc:Depends},
+         gjs,
+         libgtk-4-1,
+         libadwaita-1-0,
+         flatpak,
+         apt
+Description: Optional applications installer
+ GNOME application installer for managing Flatpak and Debian package
+ installations. Built with TypeScript, GTK4, and Libadwaita.
+ .
+ Features:
+  - Flatpak application management
+  - Debian package installation
+  - Category-based organization
+  - Modern GNOME interface
