@@ -50,7 +50,11 @@ npm run release        # Auto-increment minor version + update all manifests
 ```
 Manual version edits must sync: `package.json`, `meson.build` version, `debian/changelog` first entry
 
-**Debugging tip**: Check `builddir/main.js` after build to verify concatenation worked. If service methods are undefined at runtime, verify concatenation order in [`scripts/build.js`](scripts/build.js).
+**Debugging tips**: 
+- Check `builddir/main.js` after build to verify concatenation worked. If service methods are undefined at runtime, verify concatenation order in [`scripts/build.js`](scripts/build.js)
+- **GJS version warning**: Always set `imports.gi.versions` BEFORE importing from `imports.gi` (handled in build script)
+- **Resource paths**: Try system path first (`/usr/share/`), then `builddir/data/`, then `data/` for development
+- **Widget parent errors**: GTK widgets can only have one parent - check UI XML structure before appending programmatically
 
 ## Architecture Patterns
 

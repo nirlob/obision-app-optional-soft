@@ -67,15 +67,15 @@ function cleanJSContent(content) {
 // GJS header
 const gjsHeader = `#!/usr/bin/env gjs
 
+imports.gi.versions.Gtk = '4.0';
+imports.gi.versions.Adw = '1';
+
 const { Gio } = imports.gi;
 const { Gtk } = imports.gi;
 const { Gdk } = imports.gi;
 const { Adw } = imports.gi;
 const { GLib } = imports.gi;
 const { Pango } = imports.gi;
-
-imports.gi.versions.Gtk = '4.0';
-imports.gi.versions.Adw = '1';
 
 `;
 

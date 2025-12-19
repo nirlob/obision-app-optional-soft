@@ -69,11 +69,15 @@ class ObisionAppOptionalSoftApplication {
 
     // Load CSS
     const cssProvider = new Gtk.CssProvider();
-    // Try installed path first, then development path
+    // Try installed path first, then development paths
     try {
       cssProvider.load_from_path('/usr/share/obision-app-optional-soft/style.css');
     } catch (e) {
-      cssProvider.load_from_path('data/style.css');
+      try {
+        cssProvider.load_from_path('builddir/data/style.css');
+      } catch (e2) {
+        cssProvider.load_from_path('data/style.css');
+      }
     }
 
     const display = Gdk.Display.get_default();
@@ -173,8 +177,6 @@ class ObisionAppOptionalSoftApplication {
       const applicationsList = new ApplicationsList(window);
       applicationsList.setInstallCallback((app, install) => this.onApplicationClick(app, install));
       applicationsContent.append(applicationsList.getWidget());
-
-      mainContent.append(applicationsContent);
 
       const searchEntry = new Gtk.SearchEntry({
         hexpand: true,
