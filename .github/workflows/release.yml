@@ -29,7 +29,7 @@ jobs:
       
     - name: Clean build artifacts
       run: |
-        npm run clean || true
+        rm -rf builddir mesonbuilddir
         rm -rf ../obision-app-optional-soft_*
       
     - name: Build DEB package
