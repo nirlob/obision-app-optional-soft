@@ -1,4 +1,4 @@
-project('obision-apps',
+project('obision-app-optional-soft',
   version: '1.7.0',
   meson_version: '>= 0.59.0',
 )
@@ -6,7 +6,7 @@ project('obision-apps',
 gnome = import('gnome')
 
 # Application ID
-app_id = 'com.obision.ObisionApps'
+app_id = 'com.obision.ObisionAppOptionalSoft'
 
 # Configuration
 conf = configuration_data()
@@ -19,7 +19,7 @@ conf.set('version', meson.project_version())
 # Install directories
 bindir = get_option('bindir')
 datadir = get_option('datadir')
-pkgdatadir = datadir / 'obision-apps'
+pkgdatadir = datadir / 'obision-app-optional-soft'
 
 # Install the main script (from builddir, not src)
 install_data('builddir/main.js',
@@ -102,8 +102,8 @@ install_data('data/icons/hicolor/scalable/apps/' + app_id + '.svg',
 
 # Create launcher script
 configure_file(
-  input: 'bin/obision-apps.in',
-  output: 'obision-apps',
+  input: 'bin/obision-app-optional-soft.in',
+  output: 'obision-app-optional-soft',
   configuration: conf,
   install: true,
   install_dir: bindir,

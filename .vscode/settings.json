@@ -3,5 +3,6 @@
     "debian/control": "plaintext",
     "debian/changelog": "plaintext",
     "debian/copyright": "plaintext"
-  }
+  },
+  "mesonbuild.configureOnOpen": false
 }

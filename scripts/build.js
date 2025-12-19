@@ -248,7 +248,7 @@ if (fs.existsSync(mainJsFile)) {
     let mainContent = fs.readFileSync(mainJsFile, 'utf8');
 
     // Clean up the content - find the class definition start
-    const classStartIndex = mainContent.indexOf('class ObisionAppsApplication {');
+    const classStartIndex = mainContent.indexOf('class ObisionAppOptionalSoftApplication {');
     if (classStartIndex !== -1) {
         mainContent = mainContent.substring(classStartIndex);
     }

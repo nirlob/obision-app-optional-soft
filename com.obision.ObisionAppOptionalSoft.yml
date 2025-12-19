@@ -1,10 +1,10 @@
-app-id: com.obision.ObisionApps
+app-id: com.obision.ObisionAppOptionalSoft
 runtime: org.gnome.Platform
 runtime-version: '48'
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.node20
-command: obision-apps
+command: obision-app-optional-soft
 finish-args:
   - --share=ipc
   - --socket=fallback-x11
@@ -17,7 +17,7 @@ finish-args:
   - --share=network
 
 modules:
-  - name: obision-apps
+  - name: obision-app-optional-soft
     buildsystem: simple
     build-options:
       append-path: /usr/lib/sdk/node20/bin
@@ -33,5 +33,5 @@ modules:
       - meson setup builddir --prefix=/app
       - meson compile -C builddir
       - meson install -C builddir
-      - install -Dm644 data/com.obision.ObisionApps.gschema.xml /app/share/glib-2.0/schemas/com.obision.ObisionApps.gschema.xml
+      - install -Dm644 data/com.obision.ObisionAppOptionalSoft.gschema.xml /app/share/glib-2.0/schemas/com.obision.ObisionAppOptionalSoft.gschema.xml
       - glib-compile-schemas /app/share/glib-2.0/schemas

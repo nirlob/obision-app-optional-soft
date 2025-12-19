@@ -11,7 +11,7 @@ import { InstallApplicationData } from './interfaces/install-application.js';
 import { LoggerService } from './services/logger-service.js';
 import { SettingsService } from './services/settings-service.js';
 
-class ObisionAppsApplication {
+class ObisionAppOptionalSoftApplication {
   private application: Adw.Application;
   private installApplicationsData: InstallApplicationData[] = [];
   private installButton!: Gtk.Button;
@@ -23,7 +23,7 @@ class ObisionAppsApplication {
   constructor() {
     // Create the application
     this.application = new Adw.Application({
-      application_id: 'com.obision.ObisionApps',
+      application_id: 'com.obision.ObisionAppOptionalSoft',
       flags: Gio.ApplicationFlags.DEFAULT_FLAGS,
     });
 
@@ -71,7 +71,7 @@ class ObisionAppsApplication {
     const cssProvider = new Gtk.CssProvider();
     // Try installed path first, then development path
     try {
-      cssProvider.load_from_path('/usr/share/obision-apps/style.css');
+      cssProvider.load_from_path('/usr/share/obision-app-optional-soft/style.css');
     } catch (e) {
       cssProvider.load_from_path('data/style.css');
     }
@@ -108,7 +108,7 @@ class ObisionAppsApplication {
     try {
       // Try installed path first
       try {
-        builder.add_from_file('/usr/share/obision-apps/ui/main-window.ui');
+        builder.add_from_file('/usr/share/obision-app-optional-soft/ui/main-window.ui');
       } catch (e) {
         builder.add_from_file('data/ui/main-window.ui');
       }
@@ -205,15 +205,15 @@ class ObisionAppsApplication {
     const aboutDialog = new Adw.AboutWindow({
       transient_for: parent,
       modal: true,
-      application_name: 'Obision Apps',
-      application_icon: 'com.obision.ObisionApps',
+      application_name: 'Obision App Optional Soft',
+      application_icon: 'com.obision.ObisionAppOptionalSoft',
       developer_name: 'Jose Francisco Gonzalez',
       version: '1.0.0',
       developers: ['Jose Francisco Gonzalez <jfgs1609@gmail.com>'],
       copyright: `© ${new Date().getFullYear()} Jose Francisco Gonzalez`,
       license_type: Gtk.License.GPL_3_0,
       website: 'https://obision.com',
-      issue_url: 'https://github.com/nirlob/obision-apps/issues',
+      issue_url: 'https://github.com/nirlob/obision-app-optional-soft/issues',
     });
 
     aboutDialog.present();
@@ -241,7 +241,7 @@ class ObisionAppsApplication {
 
 // Main function
 function main(argv: string[]): number {
-  const app = new ObisionAppsApplication();
+  const app = new ObisionAppOptionalSoftApplication();
   return app.run(argv);
 }
 

@@ -11,7 +11,7 @@ export enum LogLevel {
 
 export class LoggerService {
   private static _instance: LoggerService;
-  private readonly APP_ID = 'com.obision.ObisionApps';
+  private readonly APP_ID = 'com.obision.ObisionAppOptionalSoft';
 
   private constructor() {}
 
@@ -34,7 +34,7 @@ export class LoggerService {
     // Log to GLib (journald)
     const fields: Record<string, string> = {
       'MESSAGE': message,
-      'SYSLOG_IDENTIFIER': 'obision-apps',
+      'SYSLOG_IDENTIFIER': 'obision-app-optional-soft',
       'CODE_FILE': context?.file || '',
       'CODE_FUNC': context?.function || '',
     };

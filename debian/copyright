@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: obision-apps
-Upstream-Contact: Jose Francisco Gonzalez <jfgs1609@gmail.com>
-Source: https://github.com/nirlob/obision-apps
+Upstream-Name: obision-app-optional-soft
+Upstream-Contact: Jose Francisco Gonzalez <jose@obision.com>
+Source: https://github.com/nirlob/obision-app-optional-soft
 
 Files: *
 Copyright: 2025 Jose Francisco Gonzalez

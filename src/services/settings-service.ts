@@ -8,7 +8,7 @@ export class SettingsService {
   private settings: Gio.Settings;
 
   private constructor() {
-    this.settings = new Gio.Settings({ schema_id: 'com.obision.obision-apps' });
+    this.settings = new Gio.Settings({ schema_id: 'com.obision.obision-app-optional-soft' });
   }
 
   public static get instance(): SettingsService {

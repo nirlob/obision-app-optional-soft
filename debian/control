@@ -1,4 +1,4 @@
-Source: obision-apps
+Source: obision-app-optional-soft
 Section: utils
 Priority: optional
 Maintainer: Jose Francisco Gonzalez <jfgs1609@gmail.com>
@@ -10,11 +10,11 @@ Build-Depends: debhelper-compat (= 13),
                libglib2.0-dev,
                libgtk-4-dev
 Standards-Version: 4.6.0
-Homepage: https://github.com/nirlob/obision-apps
-Vcs-Git: https://github.com/nirlob/obision-apps.git
-Vcs-Browser: https://github.com/nirlob/obision-apps
+Homepage: https://github.com/nirlob/obision-app-optional-soft
+Vcs-Git: https://github.com/nirlob/obision-app-optional-soft.git
+Vcs-Browser: https://github.com/nirlob/obision-app-optional-soft
 
-Package: obision-apps
+Package: obision-app-optional-soft
 Architecture: all
 Depends: ${misc:Depends},
          gjs,

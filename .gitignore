@@ -4,15 +4,10 @@ mesonbuilddir/
 build/
 dist/
 
-# Flatpak build directories
-.flatpak-builder/
-flatpak-build-dir/
-flatpak-repo/
-*.flatpak
-
 # Debian package build artifacts
-debian/obision-apps/
+debian/obision-app-optional-soft/
 debian/obision-install/
+debian/obision-apps/
 debian/.debhelper/
 debian/files
 debian/*.substvars
