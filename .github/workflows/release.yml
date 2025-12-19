@@ -27,6 +27,11 @@ jobs:
         sudo apt-get install -y devscripts equivs
         sudo mk-build-deps -i -r -t "apt-get -y --no-install-recommends" debian/control
       
+    - name: Clean build artifacts
+      run: |
+        npm run clean || true
+        rm -rf ../obision-app-optional-soft_*
+      
     - name: Build DEB package
       run: |
         dpkg-buildpackage -us -uc -b
@@ -87,7 +92,7 @@ jobs:
         cp ../obision-app-optional-soft/builddir/obision-app-optional-soft.deb \
            debs/obision-app-optional-soft_${VERSION}_all.deb
         
-        # Regenerate Packages file (without override file to read from .deb control)
+        # Regenerate Packages file
         dpkg-scanpackages --multiversion debs > Packages
         gzip -k -f Packages
         
