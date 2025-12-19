@@ -31,11 +31,11 @@ jobs:
       run: |
         dpkg-buildpackage -us -uc -b
         mkdir -p builddir
-        mv ../obision-apps_*.deb builddir/obision-apps.deb
+        mv ../obision-app-optional-soft_*.deb builddir/obision-app-optional-soft.deb
         
     - name: Verify DEB exists
       run: |
-        if [ ! -f builddir/obision-apps.deb ]; then
+        if [ ! -f builddir/obision-app-optional-soft.deb ]; then
           echo "ERROR: DEB file not found!"
           echo "Contents of builddir:"
           ls -la builddir/ || echo "builddir not found"
@@ -44,12 +44,12 @@ jobs:
           exit 1
         fi
         echo "✅ DEB file found:"
-        ls -lh builddir/obision-apps.deb
+        ls -lh builddir/obision-app-optional-soft.deb
       
     - name: Create Release and Upload DEB
       uses: softprops/action-gh-release@v1
       with:
-        files: builddir/obision-apps.deb
+        files: builddir/obision-app-optional-soft.deb
         generate_release_notes: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
