@@ -82,14 +82,14 @@ jobs:
         
         # Copy the .deb file with versioned name
         cp ../obision-app-optional-soft/builddir/obision-app-optional-soft.deb \
-           debs/obision-app-optional-soft_${VERSION}_amd64.deb
+           debs/obision-app-optional-soft_${VERSION}_all.deb
         
         # Regenerate Packages file
-        dpkg-scanpackages --multiversion debs > Packages
+        dpkg-scanpackages --arch all --multiversion debs /dev/null > Packages
         gzip -k -f Packages
         
         # Commit and push
-        git add debs/obision-app-optional-soft_${VERSION}_amd64.deb Packages Packages.gz
+        git add debs/obision-app-optional-soft_${VERSION}_all.deb Packages Packages.gz
         git commit -m "Add obision-app-optional-soft $VERSION"
         git push origin master
         
